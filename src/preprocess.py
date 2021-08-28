@@ -9,7 +9,7 @@ class CleanText:
         """
             Return a string with sentences starting with only with alphabets and string
             with no extra white-spaces between the words.
-            
+
             Inputs: text in string
 
             Returns:
