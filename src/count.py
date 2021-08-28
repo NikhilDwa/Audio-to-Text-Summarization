@@ -7,7 +7,7 @@ ps = PorterStemmer()
 
 
 class Frequency:
-    def __init__(self, text):
+    def __init__(self, text, *args):
         self.text = text
 
     def frequency_of_words(self: str, *args) -> dict:
@@ -48,23 +48,23 @@ class Frequency:
 
         return each_word_frequency
 
+    @staticmethod
+    def sentence_frequency_of_each_word(each_word_frequency: dict) -> dict:
+        """
+            Return a dictionary, calculating how many sentences contain the particular word in the text.
 
-def sentence_frequency_of_each_word(each_word_frequency: dict) -> dict:
-    """
-        Return a dictionary, calculating how many sentences contain the particular word in the text.
+            Inputs: the starting of sentences and its word frequency in dictionary.
 
-        Inputs: the starting of sentences and its word frequency in dictionary.
+            Returns:
+            - a dictionary with how many sentences contain the particular word in the text.
+        """
 
-        Returns:
-        - a dictionary with how many sentences contain the particular word in the text.
-    """
+        sentence_count = {}
+        for sentence, frequency_dictionary in each_word_frequency.items():
+            for word in frequency_dictionary.keys():
+                if word not in sentence_count.keys():
+                    sentence_count[word] = 1
+                else:
+                    sentence_count[word] += 1
 
-    sentence_count = {}
-    for sentence, frequency_dictionary in each_word_frequency.items():
-        for word in frequency_dictionary.keys():
-            if word not in sentence_count.keys():
-                sentence_count[word] = 1
-            else:
-                sentence_count[word] += 1
-
-    return sentence_count
+        return sentence_count
