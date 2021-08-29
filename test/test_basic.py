@@ -1,5 +1,5 @@
 import sys
-
+# sys.path.insert(0, r'F:\Leapfrog Technology\Major Project')
 import pytest
 
 from src import CleanText
@@ -18,7 +18,7 @@ def test_clean_sentences_1():
 def test_clean_sentences_2():
     output_1 = CleanText("Programming is  fun.")
     output_2 = CleanText("123 Programming is  fun.")
-    assert output_1.clean_sentences() == "Programming is fun " and output_2.clean_sentences() == " Programming is fun "
+    assert output_1.clean_sentences() == "Programming is fun." and output_2.clean_sentences() == " Programming is fun."
 
 
 # Type testing of frequency_of_words
