@@ -1,5 +1,6 @@
 [packages]
-numpy = "==1.21.2"
+speechrecognition = "==3.8.1"
+pydub = "==0.25.1"
 nltk = "==3.6.2"
 streamlit = "==0.87.0"
 pytest = "==6.2.4"
