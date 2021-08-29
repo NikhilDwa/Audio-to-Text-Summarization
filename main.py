@@ -1,6 +1,3 @@
-import nltk
-import numpy as np
-
 from src import CleanText
 from src import tf_idf_score, average_score, text_summary
 from src import tf_evaluation, idf_evaluation, tf_idf_evaluation
@@ -37,5 +34,5 @@ def text_summarization(text: str) -> str:
     return summary
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
