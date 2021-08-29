@@ -2,10 +2,10 @@ import re
 
 
 class CleanText:
-    def __init__(self, text):
+    def __init__(self, text: str):
         self.text = text
 
-    def clean_sentences(self: str) -> str:
+    def clean_sentences(self) -> str:
         """
             Return a string with sentences starting with only with alphabets and string
             with no extra white-spaces between the words.
