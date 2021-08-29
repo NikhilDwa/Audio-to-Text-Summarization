@@ -23,5 +23,8 @@ class CleanText:
             sentence = re.sub(r"\s+", " ", sentence)  # return white-space if any white-space character, one or more times
             cleaned_text.append(sentence)
         cleaned_text = '. '.join(cleaned_text)
+        cleaned_text = list(cleaned_text)
+        cleaned_text[-1] = '.'
+        cleaned_text = "".join(cleaned_text)
 
         return cleaned_text
