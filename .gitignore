@@ -1,4 +1,7 @@
 .idea
+Media
+Pipfile
+Pipfile.lock
 .pytest_cache
 test/.pytest_cache
 
