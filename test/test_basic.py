@@ -1,5 +1,5 @@
 import sys
-# sys.path.insert(0, r'F:\Leapfrog Technology\Major Project')
+
 import pytest
 
 from src import CleanText
