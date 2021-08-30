@@ -1,0 +1,6 @@
+[packages]
+nltk = "==3.6.2"
+pytest = "==6.2.4"
+pydub = "==0.25.1"
+streamlit = "==0.87.0"
+speechrecognition = "==3.8.1"
