@@ -33,7 +33,7 @@ streamlit run view.py
 
 ## Usage 
 
-After launching the application, it is simple to use it as well. The application will ask the user to upload the file, providing a form as shown below to browse the file from the device. 
+After launching the application, it is simple to use it as well. The application will ask the user to upload the file, providing a form as shown below to browse the file from the device. For now, the user can only upload .wav format audio file. 
 
 ![alt text](https://github.com/NikhilDwa/Audio-to-Text-Summarization/blob/speechtotext/nikhil/converting_speech_to_text/images/upload_file.JPG)
 
