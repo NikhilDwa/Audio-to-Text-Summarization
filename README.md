@@ -28,7 +28,7 @@ The project was developed using python 3.8. Also, other python libraries were us
 The running of the application can be viewed by the help streamlit library. There is a view.py file in the project. The developer can just run the file under the streamlit. 
 
 ```bash
-streamlit run view.py
+streamlit run main.py
 ```
 
 ## Usage 
@@ -56,7 +56,7 @@ Most of the tasks in the project are done; however, some of them are pending. Th
 - [x] Unit testing 
 - [ ] Converting large audio file to text
 - [ ] Upload any kind of audio file
-- [ ] Convert audio to video to summarize
+- [ ] Convert video's audio to be summarize
 
 
 ## Call for Contributions
